@@ -8,8 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
+
+    private DatabaseReference  mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +23,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // connecting to root directory of application
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.firebase_btn);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Object added to Firebase", Snackbar.LENGTH_LONG).show();
+                // 1 - Create child in root object
+                // 2 - Assign some value to the child object
+
+                mDatabase.child("Name").setValue("Edwin");
             }
         });
     }

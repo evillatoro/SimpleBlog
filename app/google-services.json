@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "644163820630",
+    "firebase_url": "https://simpleblog-9409e.firebaseio.com",
+    "project_id": "simpleblog-9409e",
+    "storage_bucket": "simpleblog-9409e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644163820630:android:d4f5f72bd8b3d85d",
+        "android_client_info": {
+          "package_name": "evillatoro.com.simpleblog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644163820630-2tu3m5jm65ghash6q3o4t9l3351np5cr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "evillatoro.com.simpleblog",
+            "certificate_hash": "edefce86b1c9039082b991f5fb915fbfa4a44ade"
+          }
+        },
+        {
+          "client_id": "644163820630-65hr26m3k4rmucnbqv9k4sb83u7hl5rr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgXpX9eTi6jLSvm-qamiHgRX85D09kTCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644163820630-65hr26m3k4rmucnbqv9k4sb83u7hl5rr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
