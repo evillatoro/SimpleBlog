@@ -1,5 +1,6 @@
 package evillatoro.com.simpleblog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DatabaseReference  mDatabase;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // connecting to root directory of application
+        final Intent intent = new Intent(this, NewPostActivity.class);
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.firebase_btn);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.firebase_btn);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 // 2 - Assign some value to the child object
 
                 mDatabase.child("Name").setValue("Edwin");
+
+                // launch new post
+                startActivity(intent);
             }
         });
     }
