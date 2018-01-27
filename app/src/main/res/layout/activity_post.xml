@@ -33,7 +33,7 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/title" />
+        android:hint="@string/title" />
 
     <EditText
         android:id="@+id/descField"
@@ -46,7 +46,17 @@
         android:layout_marginRight="15dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="@string/description_text" />
+        android:hint="@string/description_text" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="#ffffff" />
 
 </android.widget.RelativeLayout>
 
