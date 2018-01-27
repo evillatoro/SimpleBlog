@@ -31,12 +31,6 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Object added to Firebase", Snackbar.LENGTH_LONG).show();
-                // 1 - Create child in root object
-                // 2 - Assign some value to the child object
-
-                mDatabase.child("Name").setValue("Edwin");
-
                 // launch new post
                 startActivity(intent);
             }
