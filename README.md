@@ -23,3 +23,7 @@ Open the project with Android Studio and select "build" to build the project.
 How to deploy this on a live system:
 1. Use an android device and plug it into your computer.
 2. In Android Studio press "run" and select your device to install the application on the device.
+
+Using emulation:
+1. In Android Studio press "run" and create a new virtual device if none is available.
+2. Select from virtual device (Note: API 27 the only working version tested) to install application on emulator. 
